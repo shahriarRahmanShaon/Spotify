@@ -16,7 +16,15 @@ var window: UIWindow?
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = TabBarViewController()
+        print(AuthManager.shared.signInUrl!)
+        if AuthManager.shared.isSignedIn{
+            window?.rootViewController = TabBarViewController()
+        }else{
+            let navVc = UINavigationController(rootViewController: WelcomeViewController())
+            navVc.navigationBar.prefersLargeTitles = true
+            navVc.navigationItem.largeTitleDisplayMode = .always
+            window?.rootViewController = navVc
+        }
         return true
     }
 

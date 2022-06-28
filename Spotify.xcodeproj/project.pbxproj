@@ -17,7 +17,7 @@
 		00A4792B2864B14900F92407 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4792A2864B14900F92407 /* PlayerViewController.swift */; };
 		00A4792D2864B15500F92407 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4792C2864B15500F92407 /* PlaylistViewController.swift */; };
 		00A4792F2864B16700F92407 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4792E2864B16700F92407 /* SearchResultsViewController.swift */; };
-		00A479312864B1AA00F92407 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A479302864B1AA00F92407 /* Auth.swift */; };
+		00A479312864B1AA00F92407 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A479302864B1AA00F92407 /* AuthManager.swift */; };
 		00A479332864B1B300F92407 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A479322864B1B300F92407 /* ApiCaller.swift */; };
 		00A479352864B1BA00F92407 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A479342864B1BA00F92407 /* Haptics.swift */; };
 		00F2784328635A4500EFA1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2784228635A4500EFA1BC /* AppDelegate.swift */; };
@@ -38,7 +38,7 @@
 		00A4792A2864B14900F92407 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		00A4792C2864B15500F92407 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		00A4792E2864B16700F92407 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
-		00A479302864B1AA00F92407 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		00A479302864B1AA00F92407 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		00A479322864B1B300F92407 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		00A479342864B1BA00F92407 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		00F2783F28635A4500EFA1BC /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,7 @@
 		00A479152864A45100F92407 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				00A479302864B1AA00F92407 /* Auth.swift */,
+				00A479302864B1AA00F92407 /* AuthManager.swift */,
 				00A479322864B1B300F92407 /* ApiCaller.swift */,
 				00A479342864B1BA00F92407 /* Haptics.swift */,
 			);
@@ -250,7 +250,7 @@
 				00A4791F2864B07E00F92407 /* LibraryViewController.swift in Sources */,
 				00A4792D2864B15500F92407 /* PlaylistViewController.swift in Sources */,
 				00F2784528635A4500EFA1BC /* SceneDelegate.swift in Sources */,
-				00A479312864B1AA00F92407 /* Auth.swift in Sources */,
+				00A479312864B1AA00F92407 /* AuthManager.swift in Sources */,
 				00A4792B2864B14900F92407 /* PlayerViewController.swift in Sources */,
 				00A479272864B13300F92407 /* SettingsViewController.swift in Sources */,
 			);

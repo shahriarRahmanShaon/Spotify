@@ -17,7 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = TabBarViewController()
+        if AuthManager.shared.isSignedIn{
+            window?.rootViewController = TabBarViewController()
+        }else{
+            let navVc = UINavigationController(rootViewController: WelcomeViewController())
+            navVc.navigationBar.prefersLargeTitles = true
+            navVc.navigationItem.largeTitleDisplayMode = .always
+            window?.rootViewController = navVc
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
